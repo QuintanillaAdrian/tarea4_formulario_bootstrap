@@ -35,10 +35,8 @@
 <body>
 
     <div class="container my-4">
-        <!-- ENCABEZADO FIJO CON IMAGEN -->
         <div class="header-box mb-4">
             <div class="row">
-                <!-- Columna izquierda: asistencia -->
                 <div class="col-md-4 border-end border-dark">
                     <p class="mb-1 small">El contribuyente solicitó asistencia<br>
                         del funcionario Municipal para<br>
@@ -58,7 +56,6 @@
                     </div>
                 </div>
 
-                <!-- Columna centro: título y zona homogénea -->
                 <div class="col-md-6 text-center">
                     <h5 class="fw-bold mb-1">MUNICIPALIDAD DE DESAMPARADOS</h5>
                     <h6 class="mb-3">DECLARACIÓN DEL IMPUESTO SOBRE BIENES INMUEBLES</h6>
@@ -70,17 +67,14 @@
                     </div>
                 </div>
 
-                <!-- Columna derecha: imagen del escudo -->
                 <div class="col-md-2 text-end">
                     <img src="icon.png" alt="Escudo Municipalidad" style="max-height: 90px;">
                 </div>
             </div>
         </div>
-        <!-- FIN ENCABEZADO -->
 
         <form class="needs-validation" novalidate>
 
-            <!-- CUADRO I. IDENTIFICACIÓN DEL PROPIETARIO -->
             <div class="form-section border border-dark p-3">
                 <h6 class="fw-bold text-uppercase mb-3">CUADRO I. IDENTIFICACIÓN DEL PROPIETARIO</h6>
 
@@ -152,7 +146,6 @@
                 </div>
             </div>
 
-            <!-- CUADRO I - PARTE 2: REPRESENTANTE LEGAL -->
             <div class="form-section border border-dark p-3">
                 <h6 class="fw-bold text-uppercase mb-3">EN CASO DE PERSONA JURÍDICA, ANOTAR DATOS DEL REPRESENTANTE
                     LEGAL</h6>
@@ -219,7 +212,6 @@
                 </div>
             </div>
 
-            <!-- CUADRO II. IDENTIFICACIÓN DE LA PROPIEDAD -->
             <div class="form-section border border-dark p-3">
                 <h6 class="fw-bold text-uppercase mb-3">CUADRO II. IDENTIFICACIÓN DE LA PROPIEDAD</h6>
 
@@ -317,15 +309,15 @@
                             <label class="form-check-label" for="irregular">Irregular</label>
                             <div class="invalid-feedback">Seleccione una opción.</div>
                         </div>
+                        <input type="number" name="regularidadPorcentaje" id="regularidadPorcentaje" required>
+                        <label class="form-label" for="regular">%</label>                        
                     </div>
                 </div>
             </div>
 
-            <!-- CUADRO II (CONTINUACIÓN) -->
             <div class="form-section border border-dark p-3">
                 <h6 class="fw-bold text-uppercase mb-3">CONTINUACIÓN - IDENTIFICACIÓN DE LA PROPIEDAD</h6>
 
-                <!-- 27. PENDIENTE -->
                 <div class="mb-3">
                     <label class="form-label fw-semibold">27. PENDIENTE DEL TERRENO</label>
                     <div class="row">
@@ -351,7 +343,6 @@
                     </div>
                 </div>
 
-                <!-- 28. NIVEL -->
                 <div class="row mb-3">
                     <label class="form-label fw-semibold">28. NIVEL DEL TERRENO</label>
                     <div class="col-md-4">
@@ -361,7 +352,6 @@
                     </div>
                 </div>
 
-                <!-- 29. UBICACIÓN EN LA MANZANA -->
                 <div class="mb-3">
                     <label class="form-label fw-semibold">29. UBICACIÓN EN LA MANZANA</label>
                     <div class="row">
@@ -390,7 +380,6 @@
                     </div>
                 </div>
 
-                <!-- 30. HIDROLOGÍA -->
                 <div class="mb-3">
                     <label class="form-label fw-semibold">30. HIDROLOGÍA</label>
                     <div class="row">
@@ -407,7 +396,6 @@
                     </div>
                 </div>
 
-                <!-- 31. USO DEL SUELO -->
                 <div class="mb-3">
                     <label class="form-label fw-semibold">31. USO DEL SUELO</label>
                     <div class="row">
@@ -424,29 +412,27 @@
                     </div>
                 </div>
 
-                <!-- 32 y 33. VALOR TERRENO -->
                 <div class="row mb-3">
                     <div class="col-md-6">
-                        <label for="valorUnitario" class="form-label fw-semibold">32. VALOR UNITARIO DEL TERRENO (₡ /
-                            m²)</label>
+                        <label for="valorUnitario" class="form-label fw-semibold">32. VALOR UNITARIO DEL TERRENO (₡)</label>
                         <input type="number" class="form-control" id="valorUnitario" required>
-                        <div class="invalid-feedback">Ingrese el valor por metro cuadrado.</div>
+                        <div class="feedback">Ingrese el valor por metro cuadrado.</div>
+                        <input type="number" class="form-control" id="valorUnitario" required>
+                        <div class="feedback">Ingrese el valor por hectaria.</div>
                     </div>
                     <div class="col-md-6">
                         <label for="valorTotal" class="form-label fw-semibold">33. VALOR TOTAL DEL TERRENO (casilla 22 x
-                            32)</label>
+                            32) Pasar a casilla N°49</label>
                         <input type="number" class="form-control" id="valorTotal" required>
-                        <div class="invalid-feedback">Ingrese el valor total del terreno.</div>
+                        <div class="feedback">Ingrese el valor total del terreno.</div>
                     </div>
                 </div>
             </div>
 
-            <!-- CUADRO III. DESCRIPCIÓN DE CONSTRUCCIONES E INSTALACIONES -->
             <div class="form-section border border-dark p-3">
                 <h6 class="fw-bold text-uppercase mb-3">CUADRO III. DESCRIPCIÓN DE CONSTRUCCIONES, INSTALACIONES Y OBRAS
                     COMPLEMENTARIAS</h6>
 
-                <!-- Fila 1: Uso, Edad, Estado -->
                 <div class="row mb-3">
                     <div class="col-md-4">
                         <label class="form-label fw-semibold">34. USO ACTUAL</label>
@@ -462,7 +448,6 @@
                     </div>
                 </div>
 
-                <!-- Fila 2: Pisos, Aposentos, Área, Valor m² -->
                 <div class="row mb-3">
                     <div class="col-md-3">
                         <label class="form-label fw-semibold">37. N° DE PISOS</label>
@@ -484,7 +469,6 @@
                     </div>
                 </div>
 
-                <!-- Campo 41: Valor total de la construcción -->
                 <div class="row mb-3">
                     <div class="col-md-6">
                         <label class="form-label fw-semibold">41. VALOR DE CONSTRUCCIÓN (casilla 39 x casilla
@@ -494,7 +478,6 @@
                     </div>
                 </div>
 
-                <!-- Campo 42: Valor total de todas las construcciones -->
                 <div class="row mb-3">
                     <div class="col-md-6">
                         <label class="form-label fw-semibold">42. VALOR TOTAL DE LAS CONSTRUCCIONES (Llevar a la casilla
@@ -505,7 +488,6 @@
                 </div>
             </div>
 
-            <!-- CUADRO III - CONTINUACIÓN CAMPOS 43 AL 48 -->
             <div class="form-section border border-dark p-3">
                 <div class="row mb-3">
                     <div class="col-12">
@@ -517,7 +499,6 @@
                 </div>
 
                 <div class="row mb-3">
-                    <!-- 44. PAREDES -->
                     <div class="col-md-6">
                         <label class="form-label fw-semibold">44. PAREDES</label>
                         <div class="row">
@@ -534,7 +515,6 @@
                         </div>
                     </div>
 
-                    <!-- 45. CUBIERTA -->
                     <div class="col-md-6">
                         <label for="cubierta" class="form-label fw-semibold">45. CUBIERTA</label>
                         <input type="text" class="form-control" id="cubierta" placeholder="Ej: Zinc, teja">
@@ -542,13 +522,11 @@
                 </div>
 
                 <div class="row mb-3">
-                    <!-- 46. CIELOS -->
                     <div class="col-md-6">
                         <label for="cielos" class="form-label fw-semibold">46. CIELOS</label>
                         <input type="text" class="form-control" id="cielos" placeholder="Ej: Gypsum, tablilla PVC">
                     </div>
 
-                    <!-- 47. PISOS -->
                     <div class="col-md-6">
                         <label for="pisos" class="form-label fw-semibold">47. PISOS</label>
                         <input type="text" class="form-control" id="pisos" placeholder="Ej: Cerámica, cemento lujado">
@@ -556,7 +534,6 @@
                 </div>
 
                 <div class="row mb-3">
-                    <!-- 48. BAÑOS -->
                     <div class="col-md-6">
                         <label for="banos" class="form-label fw-semibold">48. BAÑOS</label>
                         <input type="text" class="form-control" id="banos" placeholder="Ej: 2 completos y 1 medio">
@@ -564,7 +541,6 @@
                 </div>
             </div>
 
-            <!-- CUADRO IV. DETERMINACIÓN DEL VALOR -->
             <div class="form-section border border-dark p-3">
                 <h6 class="fw-bold text-uppercase mb-3">CUADRO IV. DETERMINACIÓN DEL VALOR</h6>
 
@@ -592,7 +568,6 @@
             </div>
 
 
-            <!-- SECCIÓN FINAL: DECLARACIÓN Y FIRMA -->
             <div class="form-section border border-dark p-3">
                 <p class="mb-4">
                     <strong>Declaro que toda la presente información es cierta, correcta y verdadera.</strong>
@@ -611,7 +586,6 @@
             </div>
 
 
-            <!-- Botón temporal de envío para activar validación -->
             <div class="mt-3">
                 <button class="btn btn-primary" type="submit">Validar</button>
             </div>
